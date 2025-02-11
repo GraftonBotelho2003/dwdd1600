@@ -1,0 +1,121 @@
+body {
+    font-family: "preconnect", serif;
+    margin: 0;
+}
+
+/* header stuff here */
+header{
+    background-color: #7f2122;
+    padding: 1.5rem 10px;
+}
+header span{
+    color: #facd1e;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+/*navigation stuff here*/
+nav{
+    background-color: #fff5e6;
+}
+nav ul{
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #d32929;
+    font-weight: 700;
+}
+
+nav li.active a{
+    background-color:#d32929;
+    color: #fff5e6;
+}
+
+nav li a:hover {
+color: #facd1e
+}
+
+/* main structure */
+main{
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #7f2122;
+}
+main h2{
+    color: #d32929;
+    margin-bottom: .2rem;
+}
+main p {
+    margin: 0;
+    color: #333;
+}
+main ol{
+    padding: .5rem 30px;
+    background-color: #fff5e6;
+    border-radius: 10px;
+    border: 1px solid #d32929;
+}
+main dl dt {
+    color: #7f2122;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+main dl dd {
+    color: #d32929;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main strong {
+    font-weight: 700;
+    color: black;
+}
+
+main em {
+    font-weight: 300;
+}
+main address {
+    font-style: normal;
+    background-color: #fff5e6;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #d32929;
+    width: 300px;
+}
+main a {
+    color: #d32929;
+}
+main a:hover{
+    color: #facd1e;
+}
+
+
+/* foot stuff here */
+footer{
+    background-color: #7f2122;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #facd1e;
+}
+footer p{
+    margin: 0;
+    letter-spacing: 3px;
+}
