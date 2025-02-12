@@ -11,7 +11,7 @@ header{
 header span{
     color: #facd1e;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 
@@ -31,11 +31,11 @@ nav a{
     text-decoration: none;
     font-size: 1.1rem;
     color: #d32929;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 nav li.active a{
-    background-color:#d32929;
+    background-color: #e5dbb7;
     color: #fff5e6;
 }
 
@@ -67,7 +67,7 @@ main ol{
 }
 main dl dt {
     color: #7f2122;
-    font-weight: 700;
+    font-weight: 900;
     margin-top: 1rem;
 }
 main dl dd {
@@ -84,7 +84,7 @@ main ul li {
     font-size: .9rem;
 }
 main strong {
-    font-weight: 700;
+    font-weight: 900;
     color: black;
 }
 
