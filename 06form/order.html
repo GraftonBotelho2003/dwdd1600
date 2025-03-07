@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Grafton Botelho">
+    <meta name="description" content="To promote and grow as an artist selling art that invokes an emotional response">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="template.css">
+    <title>Grafton Design: Symbolic Realism Artwork</title>
+</head>
+
+<body>
+    <!--Start the page head-->
+    <header>
+        <span>Grafton Design</span>
+    </header>
+
+    <!--Start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Sybolic Realism Artwork</a></li>
+            <li><a href="about.html">About the Artist</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="order.html">Place an Order</a></li>
+        </ul>
+
+    </nav>
+    <!--Start the page main content-->
+     <!-- start the page main -->
+     <main>
+        <h1>Request a delivery</h1>
+        <form method="get" class="class" action="thanks.html">
+        <fieldset>
+        <legend> Customer Information</legend>
+        <label> First Name*<input type="text" name="fname" required>
+        </label>
+        <label> Last Name*<input type="text" name="lname" required>
+        </label>
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="123-456-7890">
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Gallery Options</legend>
+        <label><input type="checkbox" name="method" value="caged"> Caged </label>
+        <label><input type="checkbox" name="method" value="freedom"> Freedom </label>
+        <label><input type="checkbox" name="method" value="refliction"> Reflection </label>
+        <label><input type="checkbox" name="method" value="torment"> Torment </label>
+
+        
+        <label> Product Size
+            <select name="time">
+                <option value="none">Please Select</option>
+                <option value="morning">4x6</option>
+                <option value="noon">5x7</option>
+                <option value="afternoon">8x10</option>
+                <option value="evening">11x14</option>
+            </select>
+        </label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Delivery Options</legend>
+        <label><input type="radio"  name="standard" value="chosen"> Standard 7-10 days ($8.99)</label>
+        <label><input type="radio"  name="priority" value="chosen"> Priority 3-4 days ($12.99)</label>
+        <label><input type="radio"  name="expedited" value="chosen"> Expedited 2 days ($19.99)</label>
+    
+
+    </fieldset>
+
+    <label> Comments
+        <textarea name="comments"></textarea>
+    </label>
+
+
+
+
+        <input type="submit" value="Checkout">
+        </form>
+    </main>
+
+    <!--Start the page footer -->
+    <footer>
+        <p>&copy; 2025 &bull; Grafton Botelho &bull; Web Essentials</p>
+
+    </footer>
+</body>
+
+</html>
