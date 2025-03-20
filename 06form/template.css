@@ -7,6 +7,11 @@ body {
 header{
     background-color: #7f2122;
     padding: 1.5rem 10px;
+    display: flex;
+    align-items: flex-end;
+}
+header div{
+    padding-left: 2vw;
 }
 header span{
     color: #facd1e;
@@ -14,6 +19,66 @@ header span{
     font-weight: 900;
 }
 
+/* small screens */
+@media only screen and (max-width: 800px){
+    nav ul{
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    
+    }
+    nav a{
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom:solid 1px #aaa;
+        color: #d32929;
+    }
+    nav .active a{
+        background-color: #d32929;
+        background-image: linear-gradient(to bottom, #d32929,#7f2122);
+        color:white;
+    }
+    
+    } /*end of the media query*/
+    
+    
+    /*BIGs screens*/
+    @media only screen and (min-width: 801px){
+        nav {
+            border-top: solid 1px #E0E6E6;
+            
+        }
+        nav ul {
+            margin: 0;
+            padding: 0 2vw;
+            list-style-type: none;
+            display: flex;
+        }
+        nav a {
+            display: block;
+            padding: 1.2rem 1rem .3rem 1rem;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #8C501B;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: solid 2px #fff;
+        }
+        
+        nav .active a {
+            border-bottom: solid 2px #d32929;
+        }
+        nav a:hover {
+            color: #000;
+        }
+    
+    } /*end of the media query*/
+    
 
 /*navigation stuff here*/
 nav{
@@ -119,6 +184,15 @@ figure.wrapped figcaption{
     font-size: .75rem;
 }
 
+.artist{
+    width:100%;
+    margin: 0;
+}
+.artist img{
+    width: 100%;
+    height: auto; 
+}
+
 div.gallery{
     display: flex;
     flex-wrap: wrap;
@@ -134,6 +208,11 @@ div.gallery figcaption{
     padding-bottom: 1rem;
 }
 
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px #facd1e;
+}
+
+
 
 .class fieldset {
     border: 1px solid #7f2122;
@@ -148,27 +227,38 @@ font-size: .8rem;
     margin: .5rem;
 }
 
-.class label, .class select, .class [type=text], .class [type=tel], .class textarea {
+.class label, 
+.class select, 
+.class [type=text], 
+.class [type=tel], 
+.class [type=email], 
+.class textarea {
     display: block;
 }
 
-.class [type=text], .class [text=tel], .class select, .class textarea {
-
+.class [type=text], 
+.class [type=tel], 
+.class [type=email], 
+.class select, 
+.class textarea {
     border: solid 1px #facd1e;
-    background-color:rgba(211,41,41,0.1) ;
+    background-color: rgba(211, 41, 41, 0.1);
     padding: .3rem;
     width: 250px;
     border-radius: .3rem;
     font-family: "preconnect", serif;
     font-weight: 200;
-
 }
+
 .class textarea {
     height: 6rem;
 }
 
-.class :required {
-    background-color: rgba(211,41,41,0.1);
+/* For required fields */
+.class input:required, 
+.class select:required, 
+.class textarea:required {
+    background-color: rgba(211, 41, 41, 0.1);
     border: solid 1px #facd1e;
 }
 
