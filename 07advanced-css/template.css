@@ -1,0 +1,278 @@
+body {
+    font-family: "preconnect", serif;
+    margin: 0;
+}
+
+/* header stuff here */
+header{
+    background-color: #7f2122;
+    padding: 1.5rem 10px;
+    display: flex;
+    align-items: flex-end;
+}
+header div{
+    padding-left: 2vw;
+}
+header span{
+    color: #facd1e;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+/* small screens */
+@media only screen and (max-width: 800px){
+    nav ul{
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    
+    }
+    nav a{
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom:solid 1px #aaa;
+        color: #d32929;
+    }
+    nav .active a{
+        background-color: #d32929;
+        background-image: linear-gradient(to bottom, #d32929,#7f2122);
+        color:white;
+    }
+    
+    } /*end of the media query*/
+    
+    
+    /*BIGs screens*/
+    @media only screen and (min-width: 801px){
+        nav {
+            border-top: solid 1px #E0E6E6;
+            
+        }
+        nav ul {
+            margin: 0;
+            padding: 0 2vw;
+            list-style-type: none;
+            display: flex;
+        }
+        nav a {
+            display: block;
+            padding: 1.2rem 1rem .3rem 1rem;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #8C501B;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: solid 2px #fff;
+        }
+        
+        nav .active a {
+            border-bottom: solid 2px #d32929;
+        }
+        nav a:hover {
+            color: #000;
+        }
+    
+    } /*end of the media query*/
+    
+
+/*navigation stuff here*/
+nav{
+    background-color: #fff5e6;
+}
+nav ul{
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #d32929;
+    font-weight: 900;
+}
+
+nav li.active a{
+    background-color: #e5dbb7;
+    color: #fff5e6;
+}
+
+nav li a:hover {
+color: #facd1e
+}
+
+/* main structure */
+main{
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #7f2122;
+}
+main h2{
+    color: #d32929;
+    margin-bottom: .2rem;
+}
+main p {
+    margin: 0;
+    color: #333;
+}
+main ol{
+    padding: .5rem 30px;
+    background-color: #fff5e6;
+    border-radius: 10px;
+    border: 1px solid #d32929;
+}
+main dl dt {
+    color: #7f2122;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+main dl dd {
+    color: #d32929;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main strong {
+    font-weight: 900;
+    color: black;
+}
+
+main em {
+    font-weight: 300;
+}
+main address {
+    font-style: normal;
+    background-color: #fff5e6;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #d32929;
+    width: 300px;
+}
+main a {
+    color: #d32929;
+}
+main a:hover{
+    color: #facd1e;
+}
+figure.wrapped{
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption{
+    text-align: center;
+    font-size: .75rem;
+}
+
+.artist{
+    width:100%;
+    margin: 0;
+}
+.artist img{
+    width: 100%;
+    height: auto; 
+}
+
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure{
+    margin: .5rem 2% 0 0;
+}
+div.gallery figcaption{
+    text-align: center;
+    font-size: .8rem;
+    color: #7f2122;
+    padding-bottom: 1rem;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px #facd1e;
+}
+
+
+
+.class fieldset {
+    border: 1px solid #7f2122;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.class legend {
+color: #7f2122;
+font-size: .8rem;
+}
+.class label {
+    margin: .5rem;
+}
+
+.class label, .class select, .class [type=text], .class [type=tel], .class textarea {
+    display: block;
+}
+
+.class [type=text], .class [text=tel], .class select, .class textarea {
+
+    border: solid 1px #facd1e;
+    background-color:rgba(211,41,41,0.1) ;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "preconnect", serif;
+    font-weight: 200;
+
+}
+.class textarea {
+    height: 6rem;
+}
+
+.class :required {
+    background-color: rgba(211,41,41,0.1);
+    border: solid 1px #facd1e;
+}
+
+.class [type=submit] {
+    background-color: #7f2122;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+
+/* foot stuff here */
+footer{
+    border-top: 1rem;
+    background-color: #7f2122;
+    text-align: center;
+    padding: 1rem 10px;
+    font-size: .8rem;
+    color: #facd1e;
+    width: 100%;
+}
+footer p{
+    margin: 0;
+    letter-spacing: 3px;
+    color: #facd1e;
+}
