@@ -152,7 +152,7 @@ font-size: .8rem;
     display: block;
 }
 
-.class [type=text], .class[text=tel], .class select, .class textarea {
+.class [type=text], .class [text=tel], .class select, .class textarea {
 
     border: solid 1px #facd1e;
     background-color:rgba(211,41,41,0.1) ;
@@ -169,6 +169,7 @@ font-size: .8rem;
 
 .class :required {
     background-color: rgba(211,41,41,0.1);
+    border: solid 1px #facd1e;
 }
 
 .class [type=submit] {
