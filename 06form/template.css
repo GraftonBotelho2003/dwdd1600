@@ -43,70 +43,42 @@ header span{
         color:white;
     }
     
-    } /*end of the media query*/
+ } 
+ /*end of the media query*/
     
     
     /*BIGs screens*/
     @media only screen and (min-width: 801px){
-        nav {
-            border-top: solid 1px #E0E6E6;
-            
+        nav{
+            background-color: #fff5e6;
         }
-        nav ul {
+        nav ul{
             margin: 0;
-            padding: 0 2vw;
+            padding: 0 10px;
             list-style-type: none;
             display: flex;
         }
-        nav a {
+        nav a{
             display: block;
-            padding: 1.2rem 1rem .3rem 1rem;
-            font-size: 1rem;
+            padding: .83rem 1rem;
             text-decoration: none;
-            color: #8C501B;
-            font-weight: 600;
-            text-transform: uppercase;
-            text-align: center;
-            border-bottom: solid 2px #fff;
+            font-size: 1.1rem;
+            color: #d32929;
+            font-weight: 900;
         }
         
-        nav .active a {
-            border-bottom: solid 2px #d32929;
+        nav li.active a{
+            background-color: #e5dbb7;
+            color: #fff5e6;
         }
-        nav a:hover {
-            color: #000;
+        
+        nav li a:hover {
+        color: #facd1e
         }
     
     } /*end of the media query*/
     
 
-/*navigation stuff here*/
-nav{
-    background-color: #fff5e6;
-}
-nav ul{
-    margin: 0;
-    padding: 0 10px;
-    list-style-type: none;
-    display: flex;
-}
-nav a{
-    display: block;
-    padding: .83rem 1rem;
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: #d32929;
-    font-weight: 900;
-}
-
-nav li.active a{
-    background-color: #e5dbb7;
-    color: #fff5e6;
-}
-
-nav li a:hover {
-color: #facd1e
-}
 
 /* main structure */
 main{
